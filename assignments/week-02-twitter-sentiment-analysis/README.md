@@ -46,7 +46,11 @@ If you have finished the setup, go directly to step 12.
 4. Now, we're going to copy the contents of the assignment to a new folder using the following command
      
      ```console
+<<<<<<< HEAD
      cp -r MLE-10/assignments/week-2-analyze-sentiment-twitter .
+=======
+     cp -r MLE-8/assignments/week-2-analyze-sentiment-twitter .
+>>>>>>> ab88b3cf78cf7f783a224e7bbf117c479792c8f2
      ```
 
 5. Once that is complete, we'll `cd` into the newly created folder with
@@ -138,4 +142,8 @@ There's only one tasks for this session.
 
 ## Background
 
+<<<<<<< HEAD
 Please review the weekly narrative [here](https://great-yamamomo-5c3.notion.site/Week-2-Building-Data-Centric-AI-Products-e4e0ab67b110481986f69b55560ca28e)
+=======
+Please review the weekly narrative [here](https://www.notion.so/Week-2-Data-Centric-AI-the-AI-Product-Lifecycle-72a84c1517b44fcbb3e6bd11d47477dc#2b73937612bb46559f5b91dc2bf55e7d)
+>>>>>>> ab88b3cf78cf7f783a224e7bbf117c479792c8f2
