@@ -26,7 +26,7 @@ def get_subreddit(display_name:str) -> Subreddit:
         user_agent=secrets.REDDIT_API_USER_AGENT
         )
     
-    subreddit = reddit.subreddit(display_name)# YOUR CODE HERE
+    subreddit = reddit.subreddit(display_name)
     return subreddit
 
 def get_comments(subreddit:Subreddit, limit:int=3) -> List[str]:
@@ -56,17 +56,15 @@ def run_sentiment_analysis(comment:str) -> Dict:
     Returns:
         str: Sentiment analysis result
     """
-    sentiment_model = pipeline("sentiment-analysis")# YOUR CODE HERE
+    sentiment_model = pipeline("sentiment-analysis")
     sentiment = sentiment_model(comment)
     return sentiment[0]
 
 
 if __name__ == '__main__':
-    tsub_red = input("Which Subreddit?")
-    #print(tsub_red)
-    subreddit = get_subreddit("TSLA")# YOUR CODE HERE
+    subreddit = get_subreddit("TSLA")
     comments = get_comments(subreddit)
-    comment = comments[0]# YOUR CODE HERE
+    comment = comments[0]
     sentiment = run_sentiment_analysis(comment)
     
     print("-----------------------------------------------------------------------------------------------------")
