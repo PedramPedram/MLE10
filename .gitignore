@@ -128,5 +128,10 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+<<<<<<< HEAD
 # Reddit Authentication
 secrets_reddit.py
+=======
+# Mac DS_Store
+.DS_Store
+>>>>>>> 88ca208ae4c2a532a38b1a47aa766cabdc9edf4d
