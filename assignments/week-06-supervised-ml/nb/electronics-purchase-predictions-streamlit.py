@@ -144,6 +144,24 @@ with tab2:
 
 with tab3: 
     # YOUR CODE GOES HERE!
+    import pickle
+    import shap
+    
+    filename_expl = 'explainer.sav'
+    filename_shap_val = 'shap.sav'
+    #load_explainer = pickle.load(open(filename_expl, 'rb'))
+    load_shap_v = pickle.load(open(filename_shap_val, 'rb'))
+    fig3 = shap.plots.beeswarm(load_shap_v)
+#     fig3.add_annotation(dict(font=dict(color="black",size=14),
+#                                 x=-0.25,
+#                                 y=0.5,
+#                                 showarrow=False,
+#                                 text="True value",
+#                                 textangle=-90,
+#                                 xref="paper",
+#                                 yref="paper"))
+    st.set_option('deprecation.showPyplotGlobalUse', False)
+    st.pyplot(fig3)#,bbox_inches='tight')
         # Use tab2 as a guide!  
         # Use columns to separate visualizations for models
         # Include a plot for local and global explanability!
