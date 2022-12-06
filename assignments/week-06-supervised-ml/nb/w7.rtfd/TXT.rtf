@@ -1,0 +1,59 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2706
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;\f1\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red34\green45\blue53;\red255\green255\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c17647\c23137\c27059;\cssrgb\c100000\c100000\c100000;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs27\fsmilli13600 \cf2 \cb3 \expnd0\expndtw0\kerning0
+Algorithm Understanding\
+Is SVM (Support Vector Machine) a supervised or unsupervised learning algorithm?\cb1 \
+\cb3 Why is SVM such a powerful classification method?\cb1 \
+\cb3 What are 3 disadvantages of SVMs?\
+\
+SVMs are supervised learning models with learning algorithms for data classification and regression analysis. For example, SVM models take features and target values and based on these information, they can give a prediction (target value) of a (set of) feature(s).\
+Some of the biggest benefits of using SVMs are:\
+_Perform well when we don\'92t know much about the data\
+_Non-linear kernels can be used.\
+-Produce a clear margin of separation\
+-Effective in high dimensional spaces\
+-Can be used in cases where the number of features are higher than the number of samples\
+-Use a subset of training data points in the decision function and therefore is memory efficient\
+,however, SVMs have their own shortcomings such as:\
+-Choosing an optimal kernel and parameters can be expensive\
+-Doesn\'92t perform well with large data sets (The training time increases greatly)\
+-Doesn\'92t do a good job with noisy datasets, ex: overlapping target classes\
+-Doesn\'92t provide probability estimates directly, these estimates are calculated over expensive cross-validations. \
+ \
+\
+\cb1 \
+\cb3 Interview Readiness\
+What is the time complexity of SVM?\cb1 \
+\cb3 What is it for Logistic Regression?\
+\
+The time complexity of SVM is heavily dependent on SVM type and the used kernel. The time complexity of SVM is generally between O(n^2) and O(n^3) with \'93n\'94 being the number of training instances.\
+The time complexity of Logistic Regression is O(d), in which \'93d\'94 is the vector size of \'93w\'94 and \'93w\'94 is the vector of weights in logistic regression.\
+\cb1 \
+\cb3 Interview Readiness\
+Explain feature importance for the Random Forest algorithm?\cb1 \
+\cb3 When examining feature importance, what is Gini impurity or information gain?\
+\
+In random forest, feature importance is calculated by the decrease in node impurity, weighted by the probability of reaching that specific node. The probability of the node can be calculated by the number of samples that reach the node, divided by the total number of samples. When the values are higher, the feature is more important.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Pasted Graphic.tiff \width5460 \height1220 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+
+\f0\fs27\fsmilli13600 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 Gini impurity or information gain provide us with metrics that can help us build a better model.  \
+Gini impurity is a measure of node purity (or impurity). It is a measure of how often a randomly chosen variable will be misclassified. Gini impurity calculate each feature importance as the sum over of splits across all trees that include the feature., proportional to the number of samples splits. \
+Information gain is the difference between uncertainty of the starting node and weighted impurity of the two child node. Information gain helps us deciding which feature should be used to split the data. In another words, it measures the reduction of surprise when splitting a dataset.\
+\
+Interview Readiness\
+SHAP (SHapley Additive exPlanations) is a game theoretic approach to explain the output of any machine learning model, what is it and how does it work?\
+\
+SHAP is a mathematical method to explain the prediction of ML models. This model can be used to explain the prediction of any ML model by calculating the contribution of each feature to the prediction. This model connects optimal credit allocation with local explanations using Shapley values from game theory and their related extensions. \
+SHAp quantifies the contributions that each player (feature) brings to the game (prediction). This model quantify the contribution of each feature by calculating the deviation of the predicted outcome when a feature or a set of features are absent in the calculations. For example, to explain an image, pixels can be grouped to super pixels and then we can distribute the predictions among these super pixels. }
